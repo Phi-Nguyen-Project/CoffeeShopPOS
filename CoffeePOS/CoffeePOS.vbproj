@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC1CBAC4-EA3C-4E1F-B7EB-9DACB25765F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CoffeePOS.My.MyApplication</StartupObject>
+    <RootNamespace>CoffeePOS</RootNamespace>
+    <AssemblyName>CoffeePOS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CoffeePOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CoffeePOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.0.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddEmployee.Designer.vb">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.vb">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBlondeRoastSize.Designer.vb">
+      <DependentUpon>frmBlondeRoastSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBlondeRoastSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.Designer.vb">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoffAmericanoSize.Designer.vb">
+      <DependentUpon>frmCoffAmericanoSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoffAmericanoSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoffLateSize.Designer.vb">
+      <DependentUpon>frmCoffLateSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoffLateSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDarkRoastSize.Designer.vb">
+      <DependentUpon>frmDarkRoastSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDarkRoastSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteEmployee.Designer.vb">
+      <DependentUpon>frmDeleteEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiftCard.Designer.vb">
+      <DependentUpon>frmGiftCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiftCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMachiatoSize.Designer.vb">
+      <DependentUpon>frmMachiatoSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMachiatoSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMochaSize.Designer.vb">
+      <DependentUpon>frmMochaSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMochaSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaidGC.Designer.vb">
+      <DependentUpon>frmPaidGC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaidGC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSale.Designer.vb">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.Designer.vb">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoffEssSize.Designer.vb">
+      <DependentUpon>frmCoffEssSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoffEssSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheet.Designer.vb">
+      <DependentUpon>frmTimeSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateEmployee.Designer.vb">
+      <DependentUpon>frmUpdateEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewTransaction.Designer.vb">
+      <DependentUpon>frmViewTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWhiteMochaSize.Designer.vb">
+      <DependentUpon>frmWhiteMochaSize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWhiteMochaSize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modDatabaseUtilities.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pubVars.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBlondeRoastSize.resx">
+      <DependentUpon>frmBlondeRoastSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoffAmericanoSize.resx">
+      <DependentUpon>frmCoffAmericanoSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoffLateSize.resx">
+      <DependentUpon>frmCoffLateSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDarkRoastSize.resx">
+      <DependentUpon>frmDarkRoastSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteEmployee.resx">
+      <DependentUpon>frmDeleteEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiftCard.resx">
+      <DependentUpon>frmGiftCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMachiatoSize.resx">
+      <DependentUpon>frmMachiatoSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMochaSize.resx">
+      <DependentUpon>frmMochaSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaidGC.resx">
+      <DependentUpon>frmPaidGC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSale.resx">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoffEssSize.resx">
+      <DependentUpon>frmCoffEssSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheet.resx">
+      <DependentUpon>frmTimeSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateEmployee.resx">
+      <DependentUpon>frmUpdateEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewTransaction.resx">
+      <DependentUpon>frmViewTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWhiteMochaSize.resx">
+      <DependentUpon>frmWhiteMochaSize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus_PNG56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeeIcon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frapIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dessertIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
